@@ -41,6 +41,7 @@ Asegúrate de tener las siguientes herramientas instaladas:
 ├── requirements.txt      # Dependencias de Python
 ├── Dockerfile            # Archivo para construir la imagen Docker
 └── README.md             # Documentación del proyecto
+```
 
 ## **Instalación y Configuración**
 1. Clonar el Repositorio
