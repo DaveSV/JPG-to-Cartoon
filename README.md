@@ -49,8 +49,8 @@ Asegúrate de tener las siguientes herramientas instaladas:
 ```cd tu-repositorio```
 
 ## **2. Crear un Entorno Virtual**
-"python -m venv venv"
-"source venv/bin/activate"   # En Windows: venv\Scripts\activate
+```python -m venv venv```
+```source venv/bin/activate   # En Windows: venv\Scripts\activate```
 
 ## **3. Instalar Dependencias**
 ```pip install -r requirements.txt```
