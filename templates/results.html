@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Resultado{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1 class="mb-4">Imagen Procesada</h1>
+        <p>Tu imagen ha sido procesada con éxito. Puedes verla a continuación y descargarla:</p>
+        <img src="{{ url_for('serve_output', filename=filename) }}" alt="Imagen procesada" class="img-fluid rounded shadow-sm mb-4">
+        <div class="d-flex justify-content-center">
+            <a href="{{ url_for('serve_output', filename=filename) }}" download="{{ output_image }}" class="btn btn-success me-2">
+                Descargar Imagen
+            </a>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                Procesar Otra Imagen
+            </a>
+        </div>
+    </div>
+{% endblock %}
+

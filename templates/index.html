@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Subir Imagen{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <!-- Columna para subir la imagen -->
+        <div class="col-md-4">
+            <h2 class="mb-4">Sube una Imagen</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data" class="border p-4 rounded shadow-sm">
+                <div class="mb-3">
+                    <label for="file" class="form-label">Elige una imagen:</label>
+                    <input type="file" name="file" id="file" accept="image/*" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Procesar Imagen</button>
+            </form>
+        </div>
+
+        <!-- Columna para la galería de imágenes -->
+        <div class="col-md-8">
+            <h2 class="mb-4">Últimas Creaciones</h2>
+            <div class="row">
+                {% for image in recent_images %}
+                    <div class="col-md-4 mb-4">
+                        <img src="{{ url_for('serve_output', filename=image) }}" alt="Imagen procesada" class="img-fluid rounded shadow-sm">
+                    </div>
+                {% endfor %}
+                {% if processed_image %}
+                    <div class="col-md-4 mb-4">
+                        <h3>Imagen Procesada</h3>
+                        <img src="{{ url_for('serve_output', filename=image) }}" alt="Imagen procesada" class="img-fluid rounded shadow-sm">
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
