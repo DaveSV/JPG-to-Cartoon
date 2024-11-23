@@ -45,18 +45,18 @@ Asegúrate de tener las siguientes herramientas instaladas:
 
 ## **Instalación y Configuración**
 1. Clonar el Repositorio
-"git clone https://github.com/tu-usuario/tu-repositorio.git"
-"cd tu-repositorio"
+```git clone https://github.com/tu-usuario/tu-repositorio.git```
+```cd tu-repositorio```
 
 ## **2. Crear un Entorno Virtual**
 "python -m venv venv"
 "source venv/bin/activate"   # En Windows: venv\Scripts\activate
 
 ## **3. Instalar Dependencias**
-"pip install -r requirements.txt"
+```pip install -r requirements.txt```
 
 ## **4. Ejecutar la Aplicación**
-"python app.py"
+```python app.py```
 La aplicación estará disponible en http://127.0.0.1:5000.
 
 **Uso**
@@ -67,9 +67,9 @@ Descarga la imagen procesada si lo deseas.
 
 **Uso con Docker**
 Construir la Imagen
-"docker build -t image-processor ."
+```docker build -t image-processor .```
 Ejecutar el Contenedor
-"docker run -p 5000:5000 -v $(pwd)/inputs:/app/inputs -v $(pwd)/outputs:/app/outputs image-processor"
+```docker run -p 5000:5000 -v $(pwd)/inputs:/app/inputs -v $(pwd)/outputs:/app/outputs image-processor```
 La aplicación estará disponible en http://127.0.0.1:5000.
 
 **Mejoras Futuras**
