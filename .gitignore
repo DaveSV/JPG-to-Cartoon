@@ -1,0 +1,41 @@
+# Entornos virtuales de Python
+venv/
+env/
+
+# Configuración específica del sistema operativo
+*.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos generados por la aplicación
+inputs/
+outputs/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+
+# Configuración de IDEs/editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Configuración de Docker
+docker-compose.override.yml
+*.env
+
+# Archivos compilados de Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Configuración específica del proyecto
+*.sqlite3
+*.db
