@@ -3,6 +3,7 @@
 # **Aplicación Web para Procesamiento de Imágenes**
 
 Esta es una aplicación web desarrollada con **Flask**, diseñada para permitir a los usuarios cargar imágenes, procesarlas mediante un script Python, y visualizar y descargar los resultados. La aplicación es completamente funcional, con un enfoque en simplicidad y escalabilidad. Además, puede ser fácilmente contenedorizada usando Docker para facilitar su despliegue.
+![image](https://github.com/user-attachments/assets/716168f4-997f-4d23-80b3-83e69a775228)
 
 ---
 
